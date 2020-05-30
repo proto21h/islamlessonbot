@@ -1,0 +1,24 @@
+{
+  "name": "islamlessonbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proto21h/islamlessonbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/proto21h/islamlessonbot/issues"
+  },
+  "homepage": "https://github.com/proto21h/islamlessonbot#readme"
+}
