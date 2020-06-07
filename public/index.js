@@ -16,9 +16,9 @@ const video_list = [
 
 //let lessons_list = ['Вероубеждения','Коран', 'Фикх', 'Хадисы']
 bot.start((ctx) => ctx.reply('Выберите интересующий раздел в меню:'))
-//bot.help((ctx) => ctx.reply('Нажмите на иконку вызова меню слева от кнопки emoji'))
-//bot.on('sticker', (ctx) => ctx.reply(''))
-//bot.command('lessons', (ctx)=> ctx.reply(lessons_list[1]))
+/*bot.help((ctx) => ctx.reply('Нажмите на иконку вызова меню слева от кнопки emoji'))
+bot.on('sticker', (ctx) => ctx.reply(''))
+bot.command('lessons', (ctx)=> ctx.reply(lessons_list[1])) */
 bot.hears('ping', (ctx) => ctx.reply('понг!'))
 
 
