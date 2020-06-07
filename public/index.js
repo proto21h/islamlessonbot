@@ -8,31 +8,17 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 
 bot.use(Telegraf.log())
 
-const video_list = [
-    'https://www.youtube.com/watch?v=JtsUhu8B6GU',
-    'https://www.youtube.com/watch?v=OnTbp4_3b-o',
-    'https://www.youtube.com/watch?v=dbn60QSC4pc',
-];
-
-//let lessons_list = ['Вероубеждения','Коран', 'Фикх', 'Хадисы']
 bot.start((ctx) => ctx.reply('Выберите интересующий раздел в меню:'))
-/*bot.help((ctx) => ctx.reply('Нажмите на иконку вызова меню слева от кнопки emoji'))
-bot.on('sticker', (ctx) => ctx.reply(''))
-bot.command('lessons', (ctx)=> ctx.reply(lessons_list[1])) */
-//bot.hears('ping', (ctx) => ctx.reply('понг!'))
-
-
-
-
-// bot.command('onetime', ({ reply }) =>
-//   reply('One time keyboard', Markup
-//     .keyboard(['Вероубеждения', 'Коран', 'Фикх', 'Хадисы'])
-//     .oneTime()
-//     .resize()
-//     .extra()
-//   )
-// )  
-
+/*
+ bot.command('onetime', ({ reply }) =>
+   reply('One time keyboard', Markup
+     .keyboard(['Вероубеждения', 'Коран', 'Фикх', 'Хадисы'])
+     .oneTime()
+     .resize()
+     .extra()
+   )
+ )  
+*/
 
 bot.command('menu', ({ reply }) => {
   return reply('Выберите раздел:', Markup
@@ -48,7 +34,7 @@ bot.command('menu', ({ reply }) => {
 
 bot.hears('📖 Коран', ctx => ctx.reply('https://quran-online.ru/!'))
 bot.hears('☝️ Вероубеждение', ctx => {
-  return ctx.reply('', Extra.HTML().markup((m) =>
+  return ctx.reply(' ', Extra.HTML().markup((m) =>
     m.inlineKeyboard([
       m.callbackButton('Три основы', 'ссылка на книгу'),
       m.callbackButton('Основы исламской акиды', 'ссылка на книгу'),
