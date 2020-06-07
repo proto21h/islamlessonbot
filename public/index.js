@@ -19,7 +19,7 @@ bot.start((ctx) => ctx.reply('Выберите интересующий разд
 /*bot.help((ctx) => ctx.reply('Нажмите на иконку вызова меню слева от кнопки emoji'))
 bot.on('sticker', (ctx) => ctx.reply(''))
 bot.command('lessons', (ctx)=> ctx.reply(lessons_list[1])) */
-bot.hears('ping', (ctx) => ctx.reply('понг!'))
+//bot.hears('ping', (ctx) => ctx.reply('понг!'))
 
 
 
