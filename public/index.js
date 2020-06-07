@@ -34,7 +34,7 @@ bot.command('menu', ({ reply }) => {
 
 bot.hears('📖 Коран', ctx => ctx.reply('https://quran-online.ru/!'))
 bot.hears('☝️ Вероубеждение', ctx => {
-  return ctx.reply(' ', Extra.HTML().markup((m) =>
+  return ctx.reply('Раздел вероубеждения:', Extra.HTML().markup((m) =>
     m.inlineKeyboard([
       m.callbackButton('Три основы', 'ссылка на книгу'),
       m.callbackButton('Основы исламской акиды', 'ссылка на книгу'),
