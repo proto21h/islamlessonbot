@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "telegraf": "^3.38.0"
+    "nodemon": "^2.0.4",
+    "telegraf": "^3.38.0",
+    "telegraf-inline-menu": "^4.0.1"
   },
   "devDependencies": {},
   "scripts": {
